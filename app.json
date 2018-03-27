@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Mundo Recarga",
+    "description": "Recarga celulares de cualquier parte del mundo",
+    "slug": "mundorecarga",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "version": "1.0.4",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "icon": "./assets/ios-icon.png",
+      "bundleIdentifier": "com.intermaple.mundorecarga",
+      "supportsTablet": true
+    },
+    "android": {
+      "icon": "./assets/android-icon.png",
+      "package": "com.intermaple.mundorecarga",
+      "versionCode": 10,
+      "permissions": []
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#C2185B"
+    },
+    "notification": {
+      "icon": "./assets/notification-icon.png"
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "sentry-expo/upload-sourcemaps",
+          "config": {
+            "organization": "intermaple",
+            "project": "mundorecarga",
+            "authToken": "1e14e9f65c354fa58ddb118527e2853db8463e8491be437fa0e80b112d8da3a2"
+          }
+        }
+      ]
+    }
+  }
+}
